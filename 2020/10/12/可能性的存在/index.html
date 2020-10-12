@@ -20,24 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="前言 下午5点多收到的USB无线网卡，随即开始进行WiFi密码爆破工作。 期间经历了虚拟机的崩溃，连接网卡后主机蓝屏等。。 最终于八时许将所有的准备工作准备妥当。">
+  <meta name="description" content="​    我们为“可能性”的存在而着迷，即便其发生的概率为1%。 ​    在自然界中，“1%”的概率可谓是相当大了，让我们看一下银河系中所有星球诞生生命条件的概率吧（人类目前可观测到的碳基生命），抑或是一架民航客机失事的概率等等。 ​    应当有意识地对待自身非理性的声音（尤其是“恐惧”），长期来看或许是有益的。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Kali Linux 无线渗透初体验">
-<meta property="og:url" content="http://example.com/2020/10/09/Kali-Linux-%E6%97%A0%E7%BA%BF%E6%B8%97%E9%80%8F%E5%88%9D%E4%BD%93%E9%AA%8C/index.html">
+<meta property="og:title" content="可能性的存在">
+<meta property="og:url" content="http://example.com/2020/10/12/%E5%8F%AF%E8%83%BD%E6%80%A7%E7%9A%84%E5%AD%98%E5%9C%A8/index.html">
 <meta property="og:site_name" content="Jay Chang">
-<meta property="og:description" content="前言 下午5点多收到的USB无线网卡，随即开始进行WiFi密码爆破工作。 期间经历了虚拟机的崩溃，连接网卡后主机蓝屏等。。 最终于八时许将所有的准备工作准备妥当。">
+<meta property="og:description" content="​    我们为“可能性”的存在而着迷，即便其发生的概率为1%。 ​    在自然界中，“1%”的概率可谓是相当大了，让我们看一下银河系中所有星球诞生生命条件的概率吧（人类目前可观测到的碳基生命），抑或是一架民航客机失事的概率等等。 ​    应当有意识地对待自身非理性的声音（尤其是“恐惧”），长期来看或许是有益的。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-10-09T15:02:39.000Z">
-<meta property="article:modified_time" content="2020-10-09T15:30:04.488Z">
+<meta property="article:published_time" content="2020-10-12T08:49:23.000Z">
+<meta property="article:modified_time" content="2020-10-12T09:01:58.040Z">
 <meta property="article:author" content="Jay Chang">
-<meta property="article:tag" content="渗透">
-<meta property="article:tag" content="密码">
-<meta property="article:tag" content="DIY">
-<meta property="article:tag" content="计算机">
-<meta property="article:tag" content="网络">
+<meta property="article:tag" content="只言片语">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2020/10/09/Kali-Linux-%E6%97%A0%E7%BA%BF%E6%B8%97%E9%80%8F%E5%88%9D%E4%BD%93%E9%AA%8C/">
+<link rel="canonical" href="http://example.com/2020/10/12/%E5%8F%AF%E8%83%BD%E6%80%A7%E7%9A%84%E5%AD%98%E5%9C%A8/">
 
 
 <script id="page-configurations">
@@ -50,7 +46,7 @@
   };
 </script>
 
-  <title>Kali Linux 无线渗透初体验 | Jay Chang</title>
+  <title>可能性的存在 | Jay Chang</title>
   
 
 
@@ -194,7 +190,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/09/Kali-Linux-%E6%97%A0%E7%BA%BF%E6%B8%97%E9%80%8F%E5%88%9D%E4%BD%93%E9%AA%8C/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/12/%E5%8F%AF%E8%83%BD%E6%80%A7%E7%9A%84%E5%AD%98%E5%9C%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -207,7 +203,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Kali Linux 无线渗透初体验
+          可能性的存在
         </h1>
 
         <div class="post-meta">
@@ -218,7 +214,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-10-09 23:02:39 / 修改时间：23:30:04" itemprop="dateCreated datePublished" datetime="2020-10-09T23:02:39+08:00">2020-10-09</time>
+              <time title="创建时间：2020-10-12 16:49:23 / 修改时间：17:01:58" itemprop="dateCreated datePublished" datetime="2020-10-12T16:49:23+08:00">2020-10-12</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -226,7 +222,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+                  <a href="/categories/%E6%9D%82%E8%B0%88/" itemprop="url" rel="index"><span itemprop="name">杂谈</span></a>
                 </span>
             </span>
 
@@ -241,40 +237,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><blockquote>
-<p>下午5点多收到的USB无线网卡，随即开始进行WiFi密码爆破工作。</p>
-<p>期间经历了虚拟机的崩溃，连接网卡后主机蓝屏等。。</p>
-<p>最终于八时许将所有的准备工作准备妥当。</p>
-</blockquote>
-<a id="more"></a>
-
-<p>​    <strong>提醒：私自破解他人WiFi属于违法行为，知道了破解方法，相信大家就懂得如何防范了。</strong></p>
-<p><strong>相关资料如下：</strong></p>
-<blockquote>
-<ul>
-<li><p>网卡：芯片RT3070L，双5db天线；</p>
-</li>
-<li><p>主机：windows10 2004</p>
-</li>
-<li><p>虚拟机：VMware-workstation-full-15.1.0-13591040</p>
-</li>
-<li><p>系统：kali-linux-2020.3-live-amd64.iso</p>
-</li>
-<li><p>跑包软件：EWSA 7.01.456.0 pro  破解版</p>
-</li>
-<li><p>显卡：笔记本 GTX1060 6GB</p>
-</li>
-</ul>
-</blockquote>
-<p><strong>相关命令：</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用airmon-ng命令检查网卡是否支持监听模式</span></span><br><span class="line">airmon-ng</span><br><span class="line"><span class="comment"># 开启无线网卡的监听模式</span></span><br><span class="line">airmon-ng start wlan0</span><br><span class="line"><span class="comment"># 扫描环境中的WiFi网络</span></span><br><span class="line">airodump-ng wlan0mon</span><br><span class="line"><span class="comment"># 抓取握手包 （另起一个 终端窗口）</span></span><br><span class="line">airodump-ng -c 信道号(CH) --bssid mac地址(BSSID) -w hach wlan0mon</span><br><span class="line"><span class="comment"># 开始对选中的wifi进行攻击，被攻击设备会断网（另起一个终端窗口）</span></span><br><span class="line">aireplay-ng -0 10 -a 路由器地址 -c 被攻击设备地址 wlan0mon</span><br></pre></td></tr></table></figure>
-
-<p>​    爬过了千山万水，跑包才是重点！</p>
-<p>​    跑了十几分钟就放弃了，之前联系的一个代跑包的，一次跑出20RMB</p>
-<blockquote>
-<p>参考教程：<a target="_blank" rel="noopener" href="https://www.mzbky.com/327.html">使用Kali Linux 暴力破解wifi密码详细步骤</a></p>
-<p>ps ： 本博客尚未找到合适的图床，图片暂时不放了。</p>
-</blockquote>
+        <p>​    我们为“可能性”的存在而着迷，即便其发生的概率为1%。</p>
+<p>​    在自然界中，“1%”的概率可谓是相当大了，让我们看一下银河系中所有星球诞生生命条件的概率吧（人类目前可观测到的碳基生命），抑或是一架民航客机失事的概率等等。</p>
+<p>​    应当有意识地对待自身非理性的声音（尤其是“恐惧”），长期来看或许是有益的。</p>
 
     </div>
 
@@ -284,11 +249,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%B8%97%E9%80%8F/" rel="tag"><i class="fa fa-tag"></i> 渗透</a>
-              <a href="/tags/%E5%AF%86%E7%A0%81/" rel="tag"><i class="fa fa-tag"></i> 密码</a>
-              <a href="/tags/DIY/" rel="tag"><i class="fa fa-tag"></i> DIY</a>
-              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag"><i class="fa fa-tag"></i> 计算机</a>
-              <a href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag"><i class="fa fa-tag"></i> 网络</a>
+              <a href="/tags/%E5%8F%AA%E8%A8%80%E7%89%87%E8%AF%AD/" rel="tag"><i class="fa fa-tag"></i> 只言片语</a>
           </div>
 
         
@@ -297,13 +258,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/10/05/%E7%8E%8B%E5%B0%94%E5%BE%B7-%E8%82%A5%E7%9A%82%E7%BB%88%E7%BB%93%E8%80%85/" rel="prev" title="王尔德-肥皂终结者">
-      <i class="fa fa-chevron-left"></i> 王尔德-肥皂终结者
+    <a href="/2020/10/09/Kali-Linux-%E6%97%A0%E7%BA%BF%E6%B8%97%E9%80%8F%E5%88%9D%E4%BD%93%E9%AA%8C/" rel="prev" title="Kali Linux 无线渗透初体验">
+      <i class="fa fa-chevron-left"></i> Kali Linux 无线渗透初体验
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/10/12/%E5%8F%AF%E8%83%BD%E6%80%A7%E7%9A%84%E5%AD%98%E5%9C%A8/" rel="next" title="可能性的存在">
-      可能性的存在 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -362,7 +320,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
